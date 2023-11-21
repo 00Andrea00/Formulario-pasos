@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:700);
+body {
+    background-color: lightyellow;
+    text-align: center;
+    font-family: Impact;
+}
+
+header{
+    background-color: rgb(152, 214, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4em;
+}
+.titulo{
+    text-align: center;
+    justify-content: center;
+    margin-right: 5em;
+}
+h1{
+    text-decoration: dotted underline;
+    font-size: 45px;
+}
+body.dark{   
+    background: #333; 
+}
+body.dark header{
+    background-color: rgb(0, 0, 45);
+}
+body.dark h1{   
+    color:#fff
+}
+body.dark h2{
+    color: #fff;
+}
+body.dark p{
+    color: #fff;
+}
+body.dark form{
+    color: #fff;
+}
+body.dark label{
+    color: #fff;
+}
+body.dark #btn-prev{
+    background-color: rgb(0, 101, 67);
+    color: white;
+    font-weight: bold;
+}
+body.dark #btn-prev:hover{
+    cursor: pointer;
+    background-color: rgb(193, 255, 234);
+    color: black;
+    font-weight: bold;
+}
+body.dark #btn-next{
+    background-color: rgb(0, 101, 67);
+    color: white;
+    font-weight: bold;
+}
+body.dark #btn-next:hover{
+    cursor: pointer;
+    background-color: rgb(193, 255, 234);
+    color: black;
+    font-weight: bold;
+}
+.darkModeSwitch{
+    background: #113528;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1em;
+}
+.darkModeSwitch span{
+    width:30px;
+    height:15px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+.darkModeSwitch::after{
+    display:block;
+    background: #042d26de;
+    width: 1.9rem;
+    height: 1.9rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    content: "";
+}
+.darkModeSwitch.active{
+    background: #030e2a;
+}
+.darkModeSwitch.active::after{
+    left:unset;
+    right:0;
+}
+.darkModeSwitch:hover{
+    background-color: rgb(191, 255, 191);
+    cursor: pointer;
+}
+.login{
+    text-align: left;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    margin-left: 1em;
+}
+#user{
+    background-color: white;
+}
+#password{
+    background-color: white;
+}
+#botoncito{
+    background-color: black;
+    color: white;
+    border: solid darkslateblue 2px;
+    border-radius: 10%;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+#botoncito:hover{
+    cursor: pointer;
+    background-color: rgb(191, 255, 191);
+    color: black;
+}
+
+/* Clase para ocultar */
+.form-page {
+    display: none;
+}
+/* Clase para mostrar */
+.form-page.active {
+    display: block;
+}
+
+.color-select{
+    width: 49vw;
+    height: 50px;
+    border: solid black 2px;
+    background-color: cornflowerblue;
+    display: flex;
+    margin-top: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+.color-select div{
+    background-color: cornflowerblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-select #yellow{
+    background-color: yellow;
+}
+.color-select #orange{
+    background-color: orange;
+}
+.color-select #red{
+    background-color: red;
+}
+.color-select #pink{
+    background-color: pink;
+}
+.color-select #purple{
+    background-color: purple;
+}
+.color-select #blue{
+    background-color: blue;
+}
+.color-select #green{
+    background-color: green;
+}
+.color-select #brown{
+    background-color: brown;
+}
+.color-select #white{
+    background-color: white;
+}
+.color-select #black{
+    background-color: black;
+}
+#btn-prev{
+    background-color: rgb(193, 255, 234);
+    padding: 0.2em;
+    border: groove black 4px;
+    margin-top: 1em;
+    font-weight: bold;
+}
+#btn-prev:hover{
+    cursor: pointer;
+    background-color: rgb(0, 101, 67);
+    color: white;
+    font-weight: bold;
+}
+#btn-next{
+    background-color: rgb(193, 255, 234);
+    padding: 0.2em;
+    border: groove black 4px;
+    margin-top: 1em;
+    font-weight: bold;
+}
+#btn-next:hover{
+    cursor: pointer;
+    background-color: rgb(0, 101, 67);
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
